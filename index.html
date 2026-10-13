@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maple Street: a cozy trick-or-treat RPG</title>
+<meta name="description" content="It's Halloween night on Maple Street. Lead four trick-or-treaters round a pixel-art town, fill your bags with candy and solve a few mysteries before midnight. Coming soon to the App Store, Google Play and Steam.">
+<meta name="theme-color" content="#18112e">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Maple Street: a cozy trick-or-treat RPG">
+<meta property="og:description" content="One Halloween night, about thirty minutes, and all the candy you can carry. Coming soon to the App Store, Google Play and Steam.">
+<!-- Link previews need an absolute URL here: put the site's address in front once it has one. -->
+<meta property="og:image" content="img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/touch-icon.png">
+<link rel="preload" href="fonts/maple.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="leaves" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="hero-inner">
+    <h1><img class="logo" src="img/logo.png" width="256" height="132" alt="Maple Street: Halloween Night"></h1>
+    <p class="tagline">A cozy trick-or-treat roleplaying game</p>
+    <p class="subline">One Halloween night. About thirty minutes. All the candy you can carry.</p>
+
+    <!-- The store buttons. When a store page is live, give its button an href and
+         swap class "soon" for "live"; the "Coming soon" label can then say "Get it now". -->
+    <ul class="stores" aria-label="Where to get the game">
+      <li><a class="store soon" aria-disabled="true"><span class="store-name">App Store</span><span class="store-note">Coming soon</span></a></li>
+      <li><a class="store soon" aria-disabled="true"><span class="store-name">Google Play</span><span class="store-note">Coming soon</span></a></li>
+      <li><a class="store soon" aria-disabled="true"><span class="store-name">Steam</span><span class="store-note">Coming soon</span></a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+
+<section class="wrap night" aria-labelledby="night-h">
+  <div class="panel blurb">
+    <h2 id="night-h">Halloween night</h2>
+    <p class="lead">It's Halloween night on Maple Street!</p>
+    <p>Grab your friends and roam the town. There's plenty to see, and even more to hear.</p>
+    <p>Fill your bags with candy, but don't dawdle: porch lights go out as the night wears on.</p>
+    <p>Keep an eye out for folks who need a hand. There are mysteries to solve out there.</p>
+    <p>And mind yourself if you stay out late… the later it gets, the spookier it gets.</p>
+  </div>
+  <dl class="stats">
+    <div><dt>Minutes a night</dt><dd>30</dd></div>
+    <div><dt>Candy stops</dt><dd>93</dd></div>
+    <div><dt>Artifacts</dt><dd>7</dd></div>
+    <div><dt>Costumes</dt><dd>18</dd></div>
+    <div><dt>Mini-games</dt><dd>4</dd></div>
+    <div><dt>Achievements</dt><dd>13</dd></div>
+  </dl>
+</section>
+
+<section class="wrap features" aria-label="What you'll do">
+  <article class="feature">
+    <figure class="shot"><img src="img/shots/ufo.png" width="1280" height="720" loading="lazy" alt="Four costumed kids at the door of a house with a crashed flying saucer and little green aliens on the lawn, with speech bubbles from the neighbours all around."></figure>
+    <div>
+      <h2>Fill your bags</h2>
+      <p>Knock on every lit door in town. Ninety-three places are handing out candy: houses, car trunks, candy tables, the Quik Mart, the fire station, the farm stand, the block party and the middle of the corn maze.</p>
+      <p>Every yard is decorated differently, and the whole neighbourhood is out for the night.</p>
+    </div>
+  </article>
+
+  <article class="feature flip">
+    <figure class="shot"><img src="img/shots/maze.png" width="1280" height="720" loading="lazy" alt="The crew outside the corn maze, by the farm stand and its sign for pumpkins, cider and the maze."></figure>
+    <div>
+      <h2>Lend a hand</h2>
+      <p>Anyone with a gold ! overhead needs help. Find the little boy lost in the corn maze. Bring Biscuit the dog home. Track down a ghost's missing skull.</p>
+      <p>Every good deed earns an artifact for your collection.</p>
+      <ul class="artifacts" aria-label="The seven artifacts">
+        <li style="--i:0" title="Corn cob"></li><li style="--i:1" title="Skull"></li><li style="--i:2" title="Dog collar"></li><li style="--i:3" title="Jack-o'-lantern"></li><li style="--i:4" title="Pillowcase"></li><li style="--i:5" title="Pumpkin pie"></li><li style="--i:6" title="Bullfrog"></li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="feature">
+    <figure class="shot"><img src="img/shots/wheel.png" width="1280" height="720" loading="lazy" alt="The Spin the Wheel mini-game: a wheel of treats and tricks worth plus or minus candy."></figure>
+    <div>
+      <h2>Trick, then treat</h2>
+      <p>Some houses want a trick first. Spin the wheel, bob for apples, play the shell game or try the trick-or-treat slots.</p>
+      <p>Win and everyone gets extra candy. Bite the apple with the worm in it, and, well.</p>
+    </div>
+  </article>
+</section>
+
+<section class="late" aria-labelledby="late-h">
+  <div class="wrap">
+    <h2 id="late-h">The night wears on</h2>
+    <p class="section-sub">Five in the evening to the stroke of midnight, in about half an hour.</p>
+    <ol class="clock">
+      <li class="t1"><time>5:00 PM</time><h3>Head out</h3><p>Porch lights are on and the streets are full of trick-or-treaters.</p></li>
+      <li class="t2"><time>9:00 PM</time><h3>The bell tolls</h3><p>The clock tower strikes nine. House by house, the lights start going out.</p></li>
+      <li class="t3"><time>10:45 PM</time><h3>Teenagers</h3><p>A pack of them is after your candy. Run for a porch that still has its light on.</p></li>
+      <li class="t4"><time>Midnight</time><h3>Bags down</h3><p>Count your haul, earn your Halloween title and chase a spot on the high score board.</p></li>
+    </ol>
+    <figure class="shot wide"><img src="img/shots/cemetery.png" width="1280" height="720" loading="lazy" alt="The crew in the cemetery late at night, where a small ghost says: it isn't here, it never is."></figure>
+  </div>
+</section>
+
+<section class="wrap crew" aria-labelledby="crew-h">
+  <h2 id="crew-h">Meet the crew</h2>
+  <p class="section-sub">Four friends, one bag each. Lead with whoever you like.</p>
+  <ul class="cards">
+    <li style="--c:#b88cff"><span class="sprite walk" style="--r:0" aria-hidden="true"></span><strong>Mags</strong><span>Witch</span></li>
+    <li style="--c:#7fe3ff"><span class="sprite walk" style="--r:1" aria-hidden="true"></span><strong>Theo</strong><span>Skeleton</span></li>
+    <li style="--c:#ffd24a"><span class="sprite walk" style="--r:2" aria-hidden="true"></span><strong>Juno</strong><span>Astronaut</span></li>
+    <li style="--c:#ff6b6b"><span class="sprite walk" style="--r:3" aria-hidden="true"></span><strong>Bash</strong><span>Vampire</span></li>
+  </ul>
+
+  <div class="panel wardrobe">
+    <h3>Who's wearing what?</h3>
+    <p>Eighteen costumes. Seven to start with, and eleven more hidden around town.</p>
+    <ul class="rack">
+      <li><span class="sprite" style="--r:0" aria-hidden="true"></span>Witch</li>
+      <li><span class="sprite" style="--r:1" aria-hidden="true"></span>Skeleton</li>
+      <li><span class="sprite" style="--r:2" aria-hidden="true"></span>Astronaut</li>
+      <li><span class="sprite" style="--r:3" aria-hidden="true"></span>Vampire</li>
+      <li><span class="sprite" style="--r:4" aria-hidden="true"></span>Hot dog</li>
+      <li><span class="sprite" style="--r:5" aria-hidden="true"></span>Pirate</li>
+      <li><span class="sprite" style="--r:6" aria-hidden="true"></span>Fairy</li>
+      <li class="locked"><span class="sprite" style="--r:7" aria-hidden="true"></span>???</li>
+      <li class="locked"><span class="sprite" style="--r:8" aria-hidden="true"></span>???</li>
+      <li class="locked"><span class="sprite" style="--r:9" aria-hidden="true"></span>???</li>
+      <li class="locked"><span class="sprite" style="--r:10" aria-hidden="true"></span>???</li>
+      <li class="locked"><span class="sprite" style="--r:11" aria-hidden="true"></span>???</li>
+      <li class="locked"><span class="sprite" style="--r:12" aria-hidden="true"></span>???</li>
+      <li class="locked"><span class="sprite" style="--r:13" aria-hidden="true"></span>???</li>
+      <li class="locked"><span class="sprite" style="--r:14" aria-hidden="true"></span>???</li>
+      <li class="locked"><span class="sprite" style="--r:15" aria-hidden="true"></span>???</li>
+      <li class="locked"><span class="sprite" style="--r:16" aria-hidden="true"></span>???</li>
+      <li class="locked"><span class="sprite" style="--r:17" aria-hidden="true"></span>???</li>
+    </ul>
+  </div>
+</section>
+
+<section class="wrap gallery" aria-labelledby="gallery-h">
+  <h2 id="gallery-h">Around town</h2>
+  <ul class="grid">
+    <li><figure class="shot"><img src="img/shots/manor.png" width="1280" height="720" loading="lazy" alt="The crew at the gate of a dark manor with green-lit windows, behind an iron fence."><figcaption>The scary house</figcaption></figure></li>
+    <li><figure class="shot"><img src="img/shots/inflat.png" width="1280" height="720" loading="lazy" alt="A busy street of decorated houses, with an inflatable monster on one lawn and pumpkins along the fences."><figcaption>Best house ever</figcaption></figure></li>
+    <li><figure class="shot"><img src="img/shots/map.png" width="1280" height="720" loading="lazy" alt="The map of the whole town: blocks of houses round a park, a farm, a cemetery and a ravine."><figcaption>The whole town</figcaption></figure></li>
+    <li><figure class="shot"><img src="img/shots/crew.png" width="1280" height="720" loading="lazy" alt="The costume screen, with three of the kids dressed as a hot dog, a fairy and a witch, and the fourth a purple shadow marked locked."><figcaption>Dressing up</figcaption></figure></li>
+  </ul>
+</section>
+
+<section class="wrap soon-cta" aria-labelledby="soon-h">
+  <div class="panel">
+    <img class="moon-pumpkin" src="img/pumpkin_l.png" width="15" height="17" alt="">
+    <h2 id="soon-h">Coming soon</h2>
+    <p>Maple Street is on its way to phones, tablets and computers.</p>
+    <ul class="stores" aria-label="Where to get the game">
+      <li><a class="store soon" aria-disabled="true"><span class="store-name">App Store</span><span class="store-note">Coming soon</span></a></li>
+      <li><a class="store soon" aria-disabled="true"><span class="store-name">Google Play</span><span class="store-note">Coming soon</span></a></li>
+      <li><a class="store soon" aria-disabled="true"><span class="store-name">Steam</span><span class="store-note">Coming soon</span></a></li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="patch" aria-hidden="true">
+    <img src="img/pumpkin_s.png" width="9" height="8" alt=""><img src="img/pumpkin_l.png" width="15" height="17" alt=""><img src="img/pumpkin_m.png" width="11" height="12" alt=""><img src="img/pumpkin_s.png" width="9" height="8" alt=""><img src="img/pumpkin_m.png" width="11" height="12" alt=""><img src="img/pumpkin_l.png" width="15" height="17" alt=""><img src="img/pumpkin_s.png" width="9" height="8" alt="">
+  </div>
+  <p>Fill your bags before midnight</p>
+  <p class="fine">Maple Street · 2026 · Happy Halloween!</p>
+</footer>
+
+</body>
+</html>

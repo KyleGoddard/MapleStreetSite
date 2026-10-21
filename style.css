@@ -238,6 +238,67 @@ footer { padding: 24px 16px 40px; text-align: center; color: var(--dim); }
 .patch img[width="11"] { width: 44px; }
 .patch img[width="15"] { width: 60px; }
 footer .fine { margin-top: 4px; opacity: .7; }
+footer a { color: inherit; }
+footer a:hover, footer a:focus-visible { color: var(--gold); }
+
+/* ---------------------------------------------------------------- the privacy policy */
+.page-head { padding: 40px 16px 8px; }
+.page-head .logo { width: 384px; }
+.home { display: block; width: fit-content; margin-inline: auto; }
+
+.doc { max-width: 880px; padding-block: 32px 56px; }
+.doc h1 { font-size: 40px; line-height: 1.2; color: var(--gold); text-shadow: 0 4px 0 var(--shadow); }
+.doc .updated { color: var(--dim); margin-top: 8px; }
+.doc section { margin-top: 40px; }
+.doc h2 { font-size: 24px; line-height: 1.34; margin-bottom: 12px; }
+.doc .short { padding: 20px 24px; background: rgba(255, 209, 74, .07); border: 2px solid rgba(255, 209, 74, .4); }
+.doc .short h2 { color: var(--amber); }
+.doc ul { margin-top: 14px; display: grid; gap: 10px; }
+.doc ul + p { margin-top: 14px; }
+.doc li { position: relative; padding-left: 28px; }
+.doc li::before {                     /* a candy-orange pixel for a bullet */
+  content: ""; position: absolute; left: 4px; top: 10px;
+  width: 8px; height: 8px; background: var(--orange); box-shadow: 2px 2px 0 var(--orange-lo);
+}
+.doc a { color: var(--gold); text-underline-offset: 4px; }
+.doc a:hover, .doc a:focus-visible { color: var(--orange-hi); }
+.doc code {                           /* folder names keep their case, and the font has no \ or % */
+  font: 14px/1.5 ui-monospace, Menlo, Consolas, monospace;
+  text-transform: none;
+  overflow-wrap: anywhere;
+  color: var(--orange-hi);
+}
+
+.contact { display: grid; gap: 6px; margin-top: 24px; max-width: 560px; }
+.contact label { color: var(--amber); margin-top: 10px; }
+.contact label span { color: var(--dim); }
+.contact input, .contact textarea {
+  font: inherit; text-transform: none;
+  color: var(--ink);
+  background: var(--deep);
+  border: 2px solid var(--edge);
+  padding: 8px 12px;
+  width: 100%;
+}
+.contact textarea { resize: vertical; }
+.contact input:focus, .contact textarea:focus { outline: 2px solid var(--gold); outline-offset: 2px; }
+.contact .botcheck { display: none; }
+.contact button {                     /* the menu's START button, like a live store button */
+  justify-self: start;
+  margin-top: 20px;
+  font: inherit; font-size: 24px; line-height: 1.34; text-transform: inherit;
+  color: var(--ink);
+  background: var(--orange);
+  border: 0;
+  padding: 14px 32px 12px;
+  box-shadow: inset 0 4px 0 var(--orange-hi), inset 0 -4px 0 var(--orange-lo), 6px 6px 0 var(--shadow);
+  text-shadow: 0 2px 0 #33140a;
+  cursor: pointer;
+}
+.contact button:hover, .contact button:focus-visible { background: #ff9933; outline: 2px solid var(--gold); outline-offset: 4px; }
+.contact button:active { transform: translate(2px, 2px); }
+.contact button:disabled { opacity: .6; cursor: wait; }
+.form-note { color: var(--gold); min-height: 1.75em; margin-top: 8px; }
 
 /* ---------------------------------------------------------------- smaller screens */
 @media (max-width: 880px) {
@@ -276,6 +337,12 @@ footer .fine { margin-top: 4px; opacity: .7; }
   .rack li { width: auto; }
   .wardrobe { padding-inline: 6px; }
   .grid { grid-template-columns: 1fr; gap: 28px; }
+  .page-head .logo { width: min(256px, 100%); }
+  .doc { padding-block: 24px 40px; }
+  .doc h1 { font-size: 32px; line-height: 1.25; }
+  .doc h2 { font-size: 16px; line-height: 1.75; }
+  .doc .short { padding: 16px; }
+  .contact button { justify-self: stretch; }
 }
 
 @media (prefers-reduced-motion: reduce) {
